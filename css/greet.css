@@ -1,0 +1,28 @@
+/* html,body{
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+} */
+
+/* Styling the content section */
+.header-section {
+  position: relative;
+  height: 100px;
+  text-align: center;
+  background-color: #154360;
+  box-sizing: border-box;
+}
+.header-section h3 {
+  padding-top: 6px;
+  color: #d4ac0d;
+}
+.header-section i {
+  font-size: 28px;
+  color: #d4ac0d;
+}
+
+.main-section {
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+}
