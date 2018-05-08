@@ -54,6 +54,9 @@
   color: #d4ac0d;
   height: 30px;
 }
+/* .display{
+  color: #d4ac0d;
+} */
 /*Add media queries for Buttons*/
 @media(max-width: 550px)  {
   .buttons {
