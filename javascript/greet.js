@@ -22,15 +22,15 @@ var greetings = function(initialValue){
     ////////////////////CHECK TYPW OF LANGUAGE selected AN GREET USER/////////////////
       //Check for checked raio button
       if(selectedLanguage === 'English'){
-        return 'Hello' + ' ' + name;
+        return 'Hello,' + ' ' + name;
       }
 
       if(selectedLanguage === 'IsiXhosa'){
-        return 'Molo' + ' ' + name;
+        return 'Molo,' + ' ' + name;
       }
 
       if (selectedLanguage === 'Afrikaans') {
-        return 'Hallo' + ' ' + name;
+        return 'Goeie Dag,' + ' ' + name;
       }
   }
 
