@@ -19,7 +19,7 @@ var greetings = function(initialValue){
         nameMap[enteredName] = 0;
     }
     }
-    ////////////////////CHECK TYPW OF LANGUAGE selected AN GREET USER/////////////////
+    ////////////////////CHECK TYPE OF LANGUAGE SELECTED AN GREET USER/////////////////
       //Check for checked raio button
       if(selectedLanguage === 'English'){
         return 'Hello,' + ' ' + name;
@@ -33,18 +33,25 @@ var greetings = function(initialValue){
         return 'Goeie Dag,' + ' ' + name;
       }
   }
+  ////////////////////////END TO CHECK IF THE USER EXIST////////////////////////////
+  ////////////////////////Add a function for clearing local storage////////////
+  var clearStorage = function(setStorage){
 
+  }
   var getEnteredName = function(){
     return Object.keys(nameMap).length;
   }
   var map = function(){
     return nameMap;
   }
-////////////////////////END TO CHECK IF THE USER EXIST////////////////////////////
+
+  var resetData = function (){
+    return nameMap = {}
+  }
   return {
     setEnteredName,
     getEnteredName,
+    resetData,
     map
-
   }
 }
