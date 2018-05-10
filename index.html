@@ -40,9 +40,13 @@
     </section>
     <section class="main-section">
       <div class="row">
-        <div class="seven columns">
+        <div class="twelve">
           <label class="validation"></label>
-            <span>NAME:<input type="text" class="nameInput" placeholder="enter name" onfocus="this.value=''"></span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="seven columns">
+            <span>NAME:<input type="text" class="nameInput" placeholder="enter name" onfocus="this.value=''" required></span>
         </div>
         <div class="five columns">
           <span padding-bottom: 20px;>COUNTER:</span>
@@ -52,6 +56,11 @@
 
          <section class="languages">
            <h6>SELECT LANGUAGE YOU WANT TO GREET:</h6>
+           <div class="row">
+             <div class="twelve">
+               <label class="language" style="letter-spacing: 1px;"></label>
+             </div>
+           </div>
            <div class="row">
                <div class="four columns">
                  <input type="radio" name="whichLanguage" value = "English" class="whichLanguage">
@@ -69,15 +78,12 @@
              </section>
             <section class="">
               <div class="row">
-                <div class="four columns">
-                  <span class="message">...</span>
-                </div>
                 <div class="buttons">
-                  <div class="four columns">
-                    <button type="button" name="button" class="greetMe">greet</button>
+                  <div class="three columns u-full-width u-pull-left">
+                    <button type="button" name="button" class="greetMe u-pull-left">greet</button>
                   </div>
-                  <div class="four columns">
-                    <button type="button" name="button" class="reset">reset</button>
+                  <div class="three columns u-full-width u-pull-left">
+                    <button type="button" name="button" class="reset u-pull-left">reset</button>
                   </div>
                 </div>
                 </div>

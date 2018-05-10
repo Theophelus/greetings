@@ -17,7 +17,7 @@ describe('greeting widget', function(){
     newGreetings.setEnteredName('Afrikaan', 'Zintle');
     assert.deepEqual(2, newGreetings.getEnteredName());
   });
-  it('should count should be able to count one name once', function(){
+  it('counter should not increase if a user is greeted more than once ', function(){
     var newGreetings = greetings();
     newGreetings.setEnteredName('English', 'Anele');
     newGreetings.setEnteredName('English', 'Anele');
@@ -39,6 +39,14 @@ describe('greeting widget', function(){
   it('should count names in the map', function(){
     var newGreetings = greetings();
     newGreetings.setEnteredName('IsiXhosa', 'Anele');
+    newGreetings.setEnteredName('English', 'Ace');
+    assert.deepEqual(newGreetings.map(),{Anele: 0, Ace: 0
+    });
+  });
+  it('should not add name that already exists in the map', function(){
+    var newGreetings = greetings();
+    newGreetings.setEnteredName('IsiXhosa', 'Anele');
+    newGreetings.setEnteredName('English', 'Ace');
     newGreetings.setEnteredName('English', 'Ace');
     assert.deepEqual(newGreetings.map(),{Anele: 0, Ace: 0
     });

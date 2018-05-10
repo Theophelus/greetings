@@ -17,10 +17,10 @@ var greetings = function(initialValue){
       if(nameMap[enteredName]=== undefined){
         //add an entry for the user that was greeted in the Object Map
         nameMap[enteredName] = 0;
-    }
+    }0
     }
     ////////////////////CHECK TYPE OF LANGUAGE SELECTED AN GREET USER/////////////////
-      //Check for checked raio button
+      //Check for checked radio button
       if(selectedLanguage === 'English'){
         return 'Hello,' + ' ' + name;
       }
