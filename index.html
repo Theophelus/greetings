@@ -46,7 +46,7 @@
       </div>
       <div class="row">
         <div class="seven columns">
-            <span>NAME:<input type="text" class="nameInput" placeholder="enter name" onfocus="this.value=''" required></span>
+            <span>NAME:<input type="text" class="nameInput" placeholder="enter name" onfocus="this.value=''" pattern="/^[a-zA-Z\s]+$/" required></span>
         </div>
         <div class="five columns">
           <span padding-bottom: 20px;>COUNTER:</span>
@@ -79,10 +79,10 @@
             <section class="">
               <div class="row">
                 <div class="buttons">
-                  <div class="three columns u-full-width u-pull-left">
+                  <div class="six columns u-full-width u-pull-left">
                     <button type="button" name="button" class="greetMe u-pull-left">greet</button>
                   </div>
-                  <div class="three columns u-full-width u-pull-left">
+                  <div class="six columns u-full-width u-pull-left">
                     <button type="button" name="button" class="reset u-pull-left">reset</button>
                   </div>
                 </div>

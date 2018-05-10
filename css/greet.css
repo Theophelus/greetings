@@ -49,6 +49,9 @@
   padding: 1em;
   margin-top: 40px;
 }
+.greetMe, .reset {
+  margin-left: 30%;
+}
 .displaying {
   margin-top:30px;
   font-size: 20px;
@@ -60,14 +63,14 @@
   color: #d4ac0d;
   height: 30px;
 }
-/* .display{
-  color: #d4ac0d;
-} */
 /*Add media queries for Buttons*/
 @media(max-width: 550px)  {
   .buttons {
     height: 100px;
     text-align: center;
     padding-left: 80px;
+  }
+  .greetMe, .reset {
+    margin-left: 0%;
   }
 }

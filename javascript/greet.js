@@ -17,10 +17,9 @@ var greetings = function(initialValue){
       if(nameMap[enteredName]=== undefined){
         //add an entry for the user that was greeted in the Object Map
         nameMap[enteredName] = 0;
-    }0
+    }
     }
     ////////////////////CHECK TYPE OF LANGUAGE SELECTED AN GREET USER/////////////////
-      //Check for checked radio button
       if(selectedLanguage === 'English'){
         return 'Hello,' + ' ' + name;
       }
@@ -34,10 +33,6 @@ var greetings = function(initialValue){
       }
   }
   ////////////////////////END TO CHECK IF THE USER EXIST////////////////////////////
-  ////////////////////////Add a function for clearing local storage////////////
-  var clearStorage = function(setStorage){
-
-  }
   var getEnteredName = function(){
     return Object.keys(nameMap).length;
   }

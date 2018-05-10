@@ -19,9 +19,6 @@ var clearInput = function(){
   validation.innerHTML = "";
   language.innerHTML = "";
 }
-// var clearLanguage = function(){
-//   language.innerHTML = "";
-// }
 //Add an event listener when greet me is clicked
 greetMeElement.addEventListener("click", function(){
   //Declare a varible to get entered name value and counted Value
@@ -38,7 +35,6 @@ greetMeElement.addEventListener("click", function(){
       language.innerHTML = "Please select one of the languages in one of the radio buttons..!";
       return false;
     }
-    //console.log(enteredName);
     var selectedLanguage = newGreetings.setEnteredName(checked, enteredName);
   displayElement.innerHTML = selectedLanguage;
   countElement.innerHTML = newGreetings.getEnteredName();
@@ -46,7 +42,6 @@ greetMeElement.addEventListener("click", function(){
   //Call clear textbox, clearInput and clearLanguage function
   clear();
   clearInput();
-  //clearLanguage();
 });
 
 resetElement.addEventListener('click', function(){
