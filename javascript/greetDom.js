@@ -10,13 +10,15 @@ var initialValue = JSON.parse(localStorage.getItem('count'));
 
 //Declare instance of GREETINGS and pass initial value as argument
 var newGreetings = greetings(initialValue);
-countElement.innerHTML = newGreetings.getEnteredName();
+countElement.innerHTML = newGreetings.getEnteredNameCount();
 
 var clear = function(){
     enteredNameElement.value = "";
 }
 var clearInput = function(){
   validation.innerHTML = "";
+}
+var clearLanguage = function(){
   language.innerHTML = "";
 }
 //Add an event listener when greet me is clicked
@@ -37,11 +39,12 @@ greetMeElement.addEventListener("click", function(){
     }
     var selectedLanguage = newGreetings.setEnteredName(checked, enteredName);
   displayElement.innerHTML = selectedLanguage;
-  countElement.innerHTML = newGreetings.getEnteredName();
+  countElement.innerHTML = newGreetings.getEnteredNameCount();
   localStorage.setItem('count', JSON.stringify(newGreetings.map()));
   //Call clear textbox, clearInput and clearLanguage function
   clear();
   clearInput();
+  clearLanguage();
 });
 
 resetElement.addEventListener('click', function(){

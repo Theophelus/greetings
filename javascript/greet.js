@@ -33,7 +33,7 @@ var greetings = function(initialValue){
       }
   }
   ////////////////////////END TO CHECK IF THE USER EXIST////////////////////////////
-  var getEnteredName = function(){
+  var getEnteredNameCount = function(){
     return Object.keys(nameMap).length;
   }
   var map = function(){
@@ -45,7 +45,7 @@ var greetings = function(initialValue){
   }
   return {
     setEnteredName,
-    getEnteredName,
+    getEnteredNameCount,
     resetData,
     map
   }
